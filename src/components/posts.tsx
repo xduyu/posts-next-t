@@ -27,7 +27,7 @@ export const Posts = () => {
                 <li className='border-white/80 border-[0.5px] p-[10px] rounded-[5px]' key={post.id}>
                     <h2 className='text-white text-[25px]'>{post.title}</h2>
                     <p className='text-white text-[15px]'>{post.body}</p> 
-                    <p className='text-gray-100/80 text-[15px] pr-[10px]'><Link href={`u/${post.userId}`}>{post.userId}</Link></p>
+                    <p className='text-gray-100/80 text-[15px] pr-[10px] hover:text-white'><Link href={`u/${post.userId}`}>{post.userId}</Link></p>
                 </li>
             ))}
         </ul>
